@@ -1,0 +1,18 @@
+[individually_inferred_log10_titers] # Normal
+loc = 0
+scale = 10
+
+[log_halflife_minutes]
+# Normal on the log-halflife
+# but with priors on exp(mu)
+# and exp(sigma) for readability
+exp_loc = 1
+exp_scale = 50
+
+[t0_log10_titer_mode] # Normal on log10 TCID50/mL
+loc = 5
+scale = 2
+
+[t0_log10_titer_sd] # TruncatedNormal, min 0
+loc = 0
+scale = 0.25

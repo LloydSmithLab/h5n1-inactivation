@@ -1,0 +1,16 @@
+[default]
+target_accept_prob = 0.85
+max_tree_depth = 10
+n_prior_predictive = 4000
+n_chains = 4
+n_cores = 4
+
+[individual_titer]
+seed = 5234
+
+[halflife]
+seed = 9734
+n_cores = 1
+# current version of numpyro has problem with truncated
+# distributions like our sd prior when running in
+# parallel on CPU, so we run in serial.
