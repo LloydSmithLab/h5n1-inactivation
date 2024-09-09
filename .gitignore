@@ -2,9 +2,6 @@
 # scratchwork
 scratch/*
 
-# raw excel data, for now
-dat/raw/*.xlsx
-
 # serialized output
 out/chains/*.pickle
 
