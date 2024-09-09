@@ -33,6 +33,8 @@ Bibtex record:
 ## Directories
 - `src`: all code, including data cleaning, Bayesian inference, and figure generation.
 - `dat`: raw data (in the `raw` subdirectory), cleaned data once generated (in the `clean` subdirectory), and `.toml` configuration files that determine MCMC settings and specify prior parameter choices.
+   - Note that the cleaned `data.tsv` file is in tidy format. There are typically four rows for each unique combination of timepoint, replicate, $\log\_{10}$ dilution, and experimental condition. These represent the four distinct inoculated wells for that dilution (see manuscript methods and raw data `.xlsx` files).
+
 - `out`: mcmc, figure, and table output files, including diagnostics
 
 # Reproducing analysis
